@@ -3,7 +3,7 @@ import App from './App.vue'
 import components from '@/components'
 import './assets/tailwind.css'
 import './main.css'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import routes from '@/router/routes'
 import { createStore } from 'vuex'
 import store from "@/store"
@@ -35,7 +35,7 @@ components.forEach(component => {
     app.component(component.name, component)
 })
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
 })
 const vuex = createStore(store)
