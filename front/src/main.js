@@ -18,7 +18,7 @@ import * as directives from 'vuetify/directives'
 import axios from 'axios'
 import {app as firebase} from '@/firebase/init'
 import capitalLetter from './services/capitalLetter'
-axios.defaults.baseURL = 'http://server/api/';
+axios.defaults.baseURL = 'https://larabackend-44kk1flui-zzdfef-gmailcom.vercel.app/api/api/';
 const vuetify = createVuetify({
   components: componentss,
   directives,
@@ -42,7 +42,7 @@ const vuex = createStore(store)
 app.config.globalProperties.axios = axios
 app.config.globalProperties.firebase = firebase
 app.config.globalProperties.capitalLetter = capitalLetter
-app.config.globalProperties.baseURL = 'http://server/api/'
+app.config.globalProperties.baseURL = 'https://larabackend-44kk1flui-zzdfef-gmailcom.vercel.app/api/api/'
 app
 .use(router)
 .use(vuex)
